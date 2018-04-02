@@ -1,0 +1,25 @@
+body{background-color:#E8EAF6;padding-left:5%;padding-right:5%;font-family:Times New Roman;min-width:600px;}
+h1{color:white;font-size:1.5em;}
+#header p{font-style:oblique;color:white; }
+#header{background-color:#1A237E;padding:1em;margin:0;}
+nav{background-color:#3F51B5;padding:0em 0em 0em 0.7em;margin:0em;}
+nav a{padding:0.3em;font-weight:bold;color:#00B0FF;}
+section{background-color:white;padding:0.5em 0.5em 0.5em 0.5em;margin-top:0.5em;margin-bottom:0.5em;}
+ h3{background-color:#7986CB;padding:1em;margin:0em;color:white;}
+figure{margin:0em;}
+figure img{height:100%;width:100%;vertical-align:middle;}
+figure p{padding:0.5em 1em;background-color:#C5CAE9;color:#7990A3;margin:0em;}
+#middle{border-style:solid;border-color:#C5CAE9;border-width:1px;}
+#middle p{padding:0.5em 1em;}
+#middle p a{font-weight:bold;color:#00B0FF;}
+#middle table{padding:0.5em 1em;}
+#right{display:-webkitflex;display:flex;direction:rtl;}
+#threepictures{margin-bottom:0.5em;border-style:solid;border-color:#C5CAE9;border-width:1px;}
+#follows h5{color:#C5CAE9;font-style:oblique;}
+#follows h5 strong{color:#F5A2C1;}
+#follows{border-style:solid;border-color:#C5CAE9;border-width:1px;}
+footer{background-color:#1A237E;padding:1.3em 0em 1.3em 1em;}
+footer {color:white;}
+footer a{color:#00B0FF;font-weight:bold;}
+footer p{font-style:oblique;}
+a:hover{color:white;background-color:red;padding:0.3em;}

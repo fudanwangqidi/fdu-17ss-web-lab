@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>lab05</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="container">
+<div class="row">
+    <div class="col-md-4">
+        <h1>Share Your Travels</h1>
+        <i>Let us know where you've been</i>
+    </div>
+
+    <nav class="col-md-8">
+
+        <table class="navbar navbar-expand-md navbar-light bg-light">
+            <tr>
+                <td ><a class="navbar-brand" href="Lab04.html">Upload</a></td>
+                <td ><a class="navbar-brand" href="#">Related Photos</a></td>
+                <td ><a class="navbar-brand" href="#">Reviews</a></td>
+            </tr>
+        </table>
+    </nav>
+</div>
+
+<div class="row">
+        <div class="col-xs-8 col-md-8">
+            <ul class="list-group">
+                <li class="list-group-item">
+            <h3 >NEW YORK -CENTRAL PARK</h3>
+            <figure>
+                <a href="photo.html"><img src="images\central-park.jpg" class="w-100"/></a>
+                <br/>
+                <i>Conservatory Pond in Central Park</i>
+            </figure>
+
+            <div id="middle">
+                <p>This photo of Conservatory Pond in<a href="#"> Central Park</a> in <a href="#">New York City</a> was
+                    taken on October 22,2016 with a Canon EOS 30D camera.</p>
+                <div id="right" class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 ">
+                             <button><img src="images\icon_down.png"></button>
+                            <button><img src="images\icon_up.png"></button>
+                            <button><img src="images\icon_map.png"></button>
+                            <button><img src="images\icon_mail.png"></button>
+                            <button><img src="images\icon_download.png"></button>
+
+                    </div>
+                </div>
+            </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="col-xs-4 col-md-4 text-center border">
+            <ul class="list-group">
+                <li class="list-group-item">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="photo1.html"><img class=" w-100 d-block" src="images/related-square1.jpg" alt="First slide"></a>
+                            </div>
+                            <div class="carousel-item">
+                               <a href="photo2.html"><img class=" w-100 d-block" src="images/related-square2.jpg" alt="Second slide"></a>
+                            </div>
+                            <div class="carousel-item">
+                               <a href="photo3.html"><img class=" w-100 d-block" src="images/related-square3.jpg" alt="Third slide"></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4 >REVIEWS</h4>
+                    <h5> Ricardo  </h5>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#exone" aria-expanded="false" aria-controls="exone">
+                                        2016-05-23
+                                    </button>
+                                    <div class="collapse" id="exone">
+                                        <div class="well">
+                                            Easy on the HDR buddy.
+                                        </div>
+                                    </div>
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr/>
+                    <h5>Susan</h5>
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#extwo" aria-expanded="false" aria-controls="extwo">
+                                        2016-11-28
+                                    </button>
+                                    <div class="collapse" id="extwo">
+                                        <div class="well">
+                                            I love center park.
+                                        </div>
+                                    </div>
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </li>
+            </ul>
+        </div>
+</div>
+<footer class="text-center">
+    <nav class="navbar navbar-default navbar-fixed-bottom align-content-center">
+        <div class="container"><a href="#">Home</a><a href="#">Browse</a><a href="#">Search</a></div>
+    </nav>
+    <i>Copyright&copy2017 Share Your Travels</i>
+</footer>
+
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

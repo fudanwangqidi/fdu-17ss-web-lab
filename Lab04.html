@@ -1,113 +1,156 @@
-<!DOCTYPE html>
-
-<html lang="en" >
+<!DOCTYPE HTML>
+<html>
 
 <head>
-<meta charset="utf-8">
- 
-<title>Lab 04</title>
-   
-<link rel="stylesheet" href="./css/reset.css" />
-
-<link rel="stylesheet" href="./css/Lab04.css" />
-
+    <title>lab04</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container">
+<div class="row">
+    <div class="col-md-4">
+        <h1>Share Your Travels</h1>
+        <i>Let us know where you've been</i>
+    </div>
 
-<header>
-     
-<h1>Share Your Travels</h1>
-     
-<p>let us know where you've been</p>
+    <nav class="col-md-8">
 
-</header>
-
+        <table class="navbar navbar-expand-md navbar-light bg-light">
+            <tr>
+                <td><a class="navbar-brand" href="Lab02.html">Gallery</a></td>
+                <td><a class="navbar-brand" href="#">Feeling lucky</a></td>
+                <td><a class="navbar-brand" href="#">User</a></td>
+            </tr>
+        </table>
+    </nav>
+</div>
 <main>
 
-   
-<section>
-<form action="http://www.randyconnolly.com/tests/process.php" method="post">
-<fieldset> 
-<legend>PHOTO DETAILS</legend>  
-<table>
-    <tr>
-<td colspan="2">Title<br>
-<input type="text"placeholder="Give your photo a descriptive name"name="title"><br>
-   Description<br>
-    <textarea placeholder="Adding a rich description will help with search results" rows="5"></textarea>
-    </td>
-    </tr>
-    <tr>
-        <td><p>Continent</p>
-    <select name="continent">
-        <option value="Choose continent">Choose continent</option>
-    </select><br>
-            <p>Country</p>
-    <select name="Country">
-        <option value="Choose Country">Choose continent</option>
-    </select><br>
-            <p>city</p>
-        <input name="city" type="text">
-    </td>
-    <td><div class="box">
-        <p>copyright?</p>
-    <input type="radio" name="copyright" value="All rights reserved"checked>All rights reserved
-    <br>
-    <input type="radio" name="copyright" value="Creative Commons">Creative Commons
-    <br>
-        </div>
-        <div class="box">
-        <p>Creative Commons Types</p>
-    <input type="checkbox"name="Creative Commons Types"value="Attribution">Attribution
-    <br>
-        <input type="checkbox"name="Creative Commons Types"value="Noncommercial">Noncommercial
-        <br>
-        <input type="checkbox"name="Creative Commons Types"value="No Derivative Works">No Derivative Works
-        <br>
-        </div>
-    </td>
-    </tr>
-    <tr>
-    <td colspan="2">
-        <div class="rectangle">I accept the software license<input type="checkbox"name="choose"value="yes" ></div>
 
-    </td>
-    </tr>
-    <tr>
-    <td>
-        <p>Rate this photo</p>
-        <input type="number" style="width: 50px">
-        <p>Color Collection:</p>
-    <input type="color"name="color collection">
-    </td>
-    <td>
-        <p>Date Taken</p>
-    <input type="date"name="date">
-        <p>Time Taken</p>
-    <input type="time">
-    </td>
-    </tr>
-    <tr>
+    <section>
+        <div class="col-xs-12 col-md-12">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <form action="http://www.randyconnolly.com/tests/process.php" method="post">
+                        <fieldset>
+                            <legend>PHOTO DETAILS</legend>
+                            <div class="form-group">
+                                <label for="inputtitle">Title</label>
+                                <input type="text" placeholder="Give your photo a descriptive name"
+                                       id="inputtitle" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputdescription">Description</label>
+                                <textarea placeholder="Adding a rich description will help with search results"
+                                          id="inputdescription" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="optionContinent">Continent</label>
+                                <select name="continent" class="form-control">
+                                    <option value="Choose continent" id="optionContinent">Choose continent</option>
+                                </select>
+                            </div>
 
-    <td colspan="2">
-        <div class="rectangle">
-    <input type="submit"value="提交"class="rounded">
-    <input type="reset"value="Clear Form"class="rounded">
+                            <div class="form-group">
+                                <label for="optionCountry">Country</label>
+                                <select name="country" class="form-control">
+                                    <option value="Choose country" id="optionCountry">Choose country</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputcity">City</label>
+                                <input type="text" id="inputcity" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="optionsRadios1">Copyright?</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                    All rights reserved
+                                </label>
+                            </div>
+                            <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    Creative Commons
+                                </label>
+                            </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inlineCheckbox1">Creative Commons Types</label>
+                                <br>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Attribution
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Noncommercial
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> No Derivative Works
+                                </label>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inlilne">
+                            <input type="checkbox" id="accept">I accept the software license
+                        </label>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="ratephoto">Rate this photo</label>
+                                        <input type="number" id="ratephoto" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="collectcolor">Color Collection:</label>
+                                        <input type="color" id="collectcolor" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="date">Date Taken</label>
+                                        <input type="date" id="date" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="time">Time Taken:</label>
+                                        <input type="time" id="time" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                                    <div class="rectangle">
+                                        <input type="submit" value="提交" class="rounded">
+                                        <input type="reset" value="Clear Form" class="rounded">
+                                    </div>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
         </div>
-    </td>
-
-    </tr>
-</table>
-</fieldset>
-</form>
-</section>
+    </section>
 
 </main>
-  
 
 
-
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
